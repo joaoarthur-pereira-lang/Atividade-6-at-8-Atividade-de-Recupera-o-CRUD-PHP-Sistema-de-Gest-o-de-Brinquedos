@@ -1,16 +1,11 @@
 <?php
 
-$host = "localhost";
-$usuario = "root";
-$senha = "";
-$banco = "brinquedos";
+$conn = mysqli_connect("localhost", "root", "", "brinquedos");
 
-$conn = new mysqli($host, $usuario, $senha, $banco);
-
-if ($conn->connect_error) {
-    die("Erro na conexão: " . $conn->connect_error);
+if (!$conn) {
+    die("Erro na conexão com o banco de dados.");
 }
 
-$conn->set_charset("utf8");
+mysqli_set_charset($conn, "utf8");
 
 ?>

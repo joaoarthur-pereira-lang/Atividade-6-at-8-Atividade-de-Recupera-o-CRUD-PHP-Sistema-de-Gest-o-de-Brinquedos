@@ -1,12 +1,12 @@
-CREATE DATABASE brinquedos;
+create database brinquedos;
 
-USE brinquedos;
+use brinquedos;
 
-CREATE TABLE brinquedos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    categoria VARCHAR(50) NOT NULL,
-    faixa_etaria VARCHAR(30) NOT NULL,
-    preco DECIMAL(10,2) NOT NULL,
-    quantidade INT NOT NULL
+create table brinquedos (
+    id int primary key auto_increment,
+    nome varchar(100) not null,
+    categoria varchar(50) not null,
+    faixa_etaria varchar(20) not null,
+    preco decimal(10,2) not null,
+    quantidade int not null
 );
