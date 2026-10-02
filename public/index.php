@@ -39,3 +39,17 @@ $resultado = $conn->query($sql);
         <td>R$ <?php echo number_format($brinquedo["preco"], 2, ",", "."); ?></td>
         <td><?php echo $brinquedo["quantidade"]; ?></td>
         <td>
+            <a href="editar.php?id=<?php echo $brinquedo["id"]; ?>">Editar</a>
+
+            <a href="excluir.php?id=<?php echo $brinquedo["id"]; ?>"
+               onclick="return confirm('Deseja excluir este brinquedo?')">
+                Excluir
+            </a>
+        </td>
+    </tr>
+    <?php } ?>
+
+</table>
+
+</body>
+</html>
