@@ -34,3 +34,14 @@
     <input type="number" name="quantidade" min="0" required>
 
     <br><br>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+<br>
+
+<a href="index.php">Voltar</a>
+
+</body>
+</html>
