@@ -1,15 +1,16 @@
 <?php
 
-CREATE DATABASE brinquedos;
+$host = "localhost";
+$usuario = "root";
+$senha = "";
+$banco = "brinquedos";
 
-USE brinquedos;
+$conn = new mysqli($host, $usuario, $senha, $banco);
 
-CREATE TABLE brinquedos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    categoria VARCHAR(50) NOT NULL,
-    faixa_etaria VARCHAR(30) NOT NULL,
-    preco DECIMAL(10,2) NOT NULL,
-    quantidade INT NOT NULL
-);
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
+
+$conn->set_charset("utf8");
+
 ?>
