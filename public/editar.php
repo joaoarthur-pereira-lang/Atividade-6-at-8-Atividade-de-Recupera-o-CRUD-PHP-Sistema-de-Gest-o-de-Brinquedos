@@ -17,3 +17,23 @@ if (!$brinquedo) {
 }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Brinquedo</title>
+</head>
+<body>
+
+<h1>Editar Brinquedo</h1>
+
+<form action="atualizar.php" method="POST">
+
+    <input type="hidden" name="id" value="<?php echo $brinquedo["id"]; ?>">
+
+    <label>Nome:</label>
+    <input type="text" name="nome"
+           value="<?php echo $brinquedo["nome"]; ?>" required>
+
+    <br><br>
