@@ -1,0 +1,26 @@
+<?php
+
+include "../infra/conexao.php";
+
+$id = $_POST["id"];
+$nome = $_POST["nome"];
+$categoria = $_POST["categoria"];
+$faixa_etaria = $_POST["faixa_etaria"];
+$preco = $_POST["preco"];
+$quantidade = $_POST["quantidade"];
+
+if ($nome == "" || $categoria == "" || $faixa_etaria == "") {
+    die("Preencha todos os campos.");
+}
+
+if ($preco < 0 || $quantidade < 0) {
+    die("Preço e quantidade não podem ser negativos.");
+}
+
+$sql = "UPDATE brinquedos SET
+        nome = ?,
+        categoria = ?,
+        faixa_etaria = ?,
+        preco = ?,
+        quantidade = ?
+        WHERE id = ?";
