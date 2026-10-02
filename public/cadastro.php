@@ -14,8 +14,13 @@
     <input type="text" name="nome" required>
 
     <br><br>
-    
+
     <label>Categoria:</label>
     <input type="text" name="categoria" required>
+
+    <br><br>
+    
+    <label>Faixa etária:</label>
+    <input type="text" name="faixa_etaria" placeholder="Ex: 5 a 8 anos" required>
 
     <br><br>
