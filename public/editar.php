@@ -23,6 +23,7 @@ if (!$brinquedo) {
 <head>
     <meta charset="UTF-8">
     <title>Editar Brinquedo</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
 

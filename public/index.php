@@ -14,6 +14,7 @@ $resultado = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Gestão de Brinquedos</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
