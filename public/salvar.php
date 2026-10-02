@@ -15,3 +15,27 @@ if ($nome == "" || $categoria == "" || $faixa_etaria == "") {
 if ($preco < 0 || $quantidade < 0) {
     die("Preço e quantidade não podem ser negativos.");
 }
+
+$sql = "INSERT INTO brinquedos 
+        (nome, categoria, faixa_etaria, preco, quantidade)
+        VALUES (?, ?, ?, ?, ?)";
+
+$stmt = $conn->prepare($sql);
+
+$stmt->bind_param(
+    "sssdi",
+    $nome,
+    $categoria,
+    $faixa_etaria,
+    $preco,
+    $quantidade
+);
+
+if ($stmt->execute()) {
+    header("Location: index.php");
+    exit();
+} else {
+    die("Erro ao cadastrar brinquedo.");
+}
+
+?>
