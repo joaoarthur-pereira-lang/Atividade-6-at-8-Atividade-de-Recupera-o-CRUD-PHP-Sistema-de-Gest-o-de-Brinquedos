@@ -91,3 +91,43 @@ button {
 button:hover {
     background-color: #36b7ae;
 }
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #ddd;
+}
+
+th {
+    background-color: #5b8def;
+    color: white;
+    padding: 13px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #fff3cd;
+}
+
+/* Links de editar e excluir */
+
+td a {
+    margin: 5px;
+}
+
+td a:first-child {
+    color: #3478db;
+}
+
+td a:last-child {
+    color: #e63946;
+}
