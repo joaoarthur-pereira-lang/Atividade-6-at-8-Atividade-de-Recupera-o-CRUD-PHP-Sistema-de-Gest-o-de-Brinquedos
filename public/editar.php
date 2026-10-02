@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Cadastrar Brinquedo</title>
-</head>
-<body>
+<?php
 
-<h1>Cadastrar Brinquedo</h1>
+include "../infra/conexao.php";
 
-<form action="salvar.php" method="POST">
+$id = $_GET["id"];
 
-    <label>Nome:</label>
-    <input type="text" name="nome" required>
+$sql = "SELECT * FROM brinquedos WHERE id = ?";
 
-    <br><br>
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $id);
+$stmt->execute();
+
+$resultado = $stmt->get_result();
+$brinquedo = $resultado->fetch_assoc();
+if (!$brinquedo) {
+    die("Brinquedo não encontrado.");
+}
+
+?>
