@@ -28,7 +28,7 @@ $sql = "UPDATE brinquedos SET
         $stmt = $conn->prepare($sql);
 
 $stmt->bind_param(
-    "sssdi i",
+    "sssdii",
     $nome,
     $categoria,
     $faixa_etaria,
