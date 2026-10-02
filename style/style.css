@@ -131,3 +131,9 @@ td a:first-child {
 td a:last-child {
     color: #e63946;
 }
+
+form + br + a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
