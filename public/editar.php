@@ -37,3 +37,15 @@ if (!$brinquedo) {
            value="<?php echo $brinquedo["nome"]; ?>" required>
 
     <br><br>
+
+    <label>Categoria:</label>
+    <input type="text" name="categoria"
+           value="<?php echo $brinquedo["categoria"]; ?>" required>
+
+    <br><br>
+
+    <label>Faixa etária:</label>
+    <input type="text" name="faixa_etaria"
+           value="<?php echo $brinquedo["faixa_etaria"]; ?>" required>
+
+    <br><br>
