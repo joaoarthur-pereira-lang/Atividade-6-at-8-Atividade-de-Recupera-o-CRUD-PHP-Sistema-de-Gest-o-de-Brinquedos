@@ -29,3 +29,19 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+body > a {
+    display: block;
+    width: 180px;
+    margin: 0 auto 20px auto;
+    padding: 12px;
+    text-align: center;
+    background-color: #ff6b35;
+    color: white;
+    border-radius: 20px;
+}
+
+body > a:hover {
+    background-color: #e85a2a;
+    text-decoration: none;
+}
