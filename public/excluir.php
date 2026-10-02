@@ -1,6 +1,6 @@
 <?php
 
-include "config/conexao.php";
+include "../infra/conexao.php";
 
 $id = $_GET["id"];
 
