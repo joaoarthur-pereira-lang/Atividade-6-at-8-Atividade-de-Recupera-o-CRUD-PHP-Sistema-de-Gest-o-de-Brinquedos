@@ -65,3 +65,10 @@ if (!$brinquedo) {
     <button type="submit">Salvar alterações</button>
 
 </form>
+
+<br>
+
+<a href="index.php">Voltar</a>
+
+</body>
+</html>
