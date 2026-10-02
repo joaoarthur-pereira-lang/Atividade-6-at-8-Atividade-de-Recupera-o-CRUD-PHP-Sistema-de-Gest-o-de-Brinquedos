@@ -14,3 +14,8 @@
     <input type="text" name="nome" required>
 
     <br><br>
+    
+    <label>Categoria:</label>
+    <input type="text" name="categoria" required>
+
+    <br><br>
