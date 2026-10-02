@@ -49,3 +49,19 @@ if (!$brinquedo) {
            value="<?php echo $brinquedo["faixa_etaria"]; ?>" required>
 
     <br><br>
+
+    <label>Preço:</label>
+    <input type="number" name="preco" step="0.01" min="0"
+           value="<?php echo $brinquedo["preco"]; ?>" required>
+
+    <br><br>
+
+    <label>Quantidade:</label>
+    <input type="number" name="quantidade" min="0"
+           value="<?php echo $brinquedo["quantidade"]; ?>" required>
+
+    <br><br>
+
+    <button type="submit">Salvar alterações</button>
+
+</form>
