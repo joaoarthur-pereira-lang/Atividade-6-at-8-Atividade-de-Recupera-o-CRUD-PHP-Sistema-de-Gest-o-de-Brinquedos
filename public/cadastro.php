@@ -29,3 +29,8 @@
     <input type="number" name="preco" step="0.01" min="0" required>
 
     <br><br>
+
+    <label>Quantidade:</label>
+    <input type="number" name="quantidade" min="0" required>
+
+    <br><br>
