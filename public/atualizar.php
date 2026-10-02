@@ -24,3 +24,24 @@ $sql = "UPDATE brinquedos SET
         preco = ?,
         quantidade = ?
         WHERE id = ?";
+
+        $stmt = $conn->prepare($sql);
+
+$stmt->bind_param(
+    "sssdi i",
+    $nome,
+    $categoria,
+    $faixa_etaria,
+    $preco,
+    $quantidade,
+    $id
+);
+
+if ($stmt->execute()) {
+    header("Location: index.php");
+    exit;
+} else {
+    echo "Erro ao atualizar: " . $stmt->error;
+}
+
+?>
